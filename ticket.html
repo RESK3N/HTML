@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue Booking System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .queue-container {
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Queue Booking System</h2>
+    <button onclick="bookPosition()">Book a Queue Position</button>
+    <div class="queue-container">
+      <h3>Current Queue:</h3>
+      <ul id="queueList"></ul>
+    </div>
+
+    <script>
+      let queue = [];
+      let counter = 1;
+
+      function bookPosition() {
+        let name = prompt("Enter your name:");
+        if (name) {
+          queue.push({ id: counter++, name: name });
+          updateQueueDisplay();
+        }
+      }
+
+      function updateQueueDisplay() {
+        let queueList = document.getElementById("queueList");
+        queueList.innerHTML = "";
+        queue.forEach((person) => {
+          let listItem = document.createElement("li");
+          listItem.textContent = `#${person.id} - ${person.name}`;
+          queueList.appendChild(listItem);
+        });
+      }
+    </script>
+  </body>
+</html>
