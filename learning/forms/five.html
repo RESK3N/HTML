@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Complex Form</header>
+    <br />
+    <fieldset>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" />
+      <label for="email">Email :</label>
+      <input type="text" name="email" id="email" />
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" />
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" />
+      <label for="gender">Gender :</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="United States">United States</option>
+        <option value="India">India</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <label for="street">Street :</label>
+      <input type="text" name="street" id="street" />
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" />
+      <label for="state">State:</label>
+      <input type="text" name="state" id="state" />
+      <label for="zip">Zip Code:</label>
+      <input type="text" name="zip" id="zip" />
+    </fieldset>
+    <fieldset>
+      <legend>Other Information</legend>
+      <label for="comment">Comments</label>
+      <textarea name="comment" id="comment"></textarea>
+      <label for="terms">I agree to the terms of service</label>
+      <input type="checkbox" id="terms" />
+    </fieldset>
+    <br />
+    <button type="submit">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Job Application</header>
+    <label for="name">Name :</label><br />
+    <input type="text" name="name" id="name" /><br />
+    <label for="email">Email :</label><br />
+    <input type="text" name="email" id="email" /><br />
+    <label for="phone">Phone :</label><br />
+    <input type="tel" name="ph" id="phone" /><br />
+    <label for="resume">Resume : </label><br />
+    <input type="file" name="resume" id="resume" /><br /><br />
+    <label for="Exp">Experience(years): </label><br />
+    <input type="number" name="counter" id="Exp" min="0" max="50" /><br />
+    <fieldset>
+      <legend>Skills:</legend>
+      <input type="checkbox" id="chk1" /><br />
+      <label for="chk1">HTML</label><br />
+      <input type="checkbox" id="chk2" /><br />
+      <label for="CSS">CSS</label><br />
+      <input type="checkbox" id="chk3" /><br />
+      <label for="chk3">Javascript</label><br />
+    </fieldset>
+    <label for="education">Highest Education</label><br />
+    <select name="education" id="education">
+      <option value="High School">High School</option>
+      <option value="Associate's Degree">Associate's Degree</option>
+      <option value="Bachelor's Degree">Bachelor's Degree</option>
+      <option value="Master's Degree">Master's Degree</option>
+      <option value="PhD">PhD</option></select
+    ><br />
+    <fieldset>
+      <legend>Availablity</legend>
+      <input type="radio" id="radio1" name="radio" value="Full Time" />
+      <label for="radio1">Full Time</label><br />
+      <input type="radio" id="radio2" name="radio" value="Part Time" />
+      <label for="radio2">Part Time</label><br />
+    </fieldset>
+    <label for="comments">Additional Comments :</label><br />
+    <textarea name="comments" id="comments" rows="5" cols="45"></textarea>
+    <button type="submit">Submit Application</button>
+  </body>
+</html>

@@ -3,16 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Index Form</title>
   </head>
   <body>
     <form action="">
-      <label for="email">Enter Email ID :</label>
-      <input type="text" id="email" /><br /><br />
-      <label for="password">Enter Password :</label>
-      <input type="password" id="password" /><br /><br />
-      <input type="submit" value="Log in" />
-      <button>Forgot Password ?</button>
+      <fieldset>
+        <legend>INPUT FORM</legend>
+        <label for="email">Enter Email ID :</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="abc@example.com"
+        /><br /><br />
+        <label for="password">Enter Password :</label>
+        <input type="password" id="password" /><br /><br />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me </label><br />
+        <input type="radio" />Male <input type="radio" />Female <br /><br />
+        <input type="submit" value="Log in" />
+
+        <button>Forgot Password ?</button><br /><br />
+
+        <label for="dob">Enter date of Birth</label>
+        <input type="date" id="dob" /><br /><br />
+
+        <label for="selector">Enter Food Choice </label>
+        <select name="food" id="selector">
+          <option value="Maggi">Maggi</option>
+          <option value="Kurkure">Kurkure</option>
+          <option value="Chips">Chips</option>
+        </select>
+        <br /><br />
+
+        <textarea
+          name="comments"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Write something here"
+        ></textarea>
+      </fieldset>
     </form>
   </body>
 </html>
